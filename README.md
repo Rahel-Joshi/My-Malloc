@@ -49,4 +49,13 @@ Once the project is compiled, you can run the test cases using:
 This will execute a series of tests to ensure that the custom allocator is working correctly, including tests for memory allocation, freeing, and fragmentation handling.
 
 
+**How to Use**
+
+Look in `my_malloc.h` to see the available API calls :)
+
+`initialize_memory(size_t num_pages)` initializes the heap with `num_pages` (each page starts off with 4096 bytes)
+
+`my_malloc(size_t size)` returns a pointer to a chunk of heap memory with `size` bytes available
+
+`my_free(void *ptr)` takes a `ptr` to an instance in heap memory and frees that chunk of heap memory
 
