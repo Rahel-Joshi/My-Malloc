@@ -1,4 +1,28 @@
 
+# My-Malloc: Custom Memory Allocator API in C
+
+This project implements a custom memory allocator in C using mmap system calls. It includes custom versions of malloc and free with optimization through a segregated free list strategy, which improves allocation efficiency and reduces fragmentation.
+
+
+
+
+## Features
+
+- **Custom malloc & free:** Implements memory allocation and freeing functions using mmap for dynamic memory management.
+
+- **Segregated Free List:** Optimizes allocation by grouping free blocks into different size classes, allowing for fast allocation of memory and better reuse of blocks.
+
+- **Efficient Memory Management:** Coalesces adjacent free blocks to reduce fragmentation.
+
+
+
+## Files
+
+- `my_malloc.c`: Contains the implementation of `my_malloc` and `my_free`.
+- `my_malloc.h`: Header file declaring the custom allocation and freeing functions.
+- `my_malloc_test.c`: Test suite that checks the functionality of the custom allocator.
+
+
 ## How to Build and Run Tests
 
 **Compilation**
